@@ -1,0 +1,29 @@
+{
+  "name": "Agar",
+  "version": "1.0.0",
+  "description": "Agar in NodeJS",
+  "main": "servidor.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xgavalda/Agar.git"
+  },
+  "keywords": [
+    "agar",
+    "games",
+    "nodejs"
+  ],
+  "author": "XGavalda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xgavalda/Agar/issues"
+  },
+  "homepage": "https://github.com/Xgavalda/Agar"
+}
