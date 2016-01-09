@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Jquery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Etiquetes AWESOME facebook, youtube, etc... -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Els meus styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Agar</title>
+  </head>
+  <body>
+    <!-- Recuadro del objecta JUGADOR + Parametres -->
+    <div id="recuadro">
+      <div id="inicio">
+        <!-- Nom del Joc -->
+        <h3 style="display:inline-block">R3ivax Games</h3>
+        <!-- Logo del Jocs -->
+        <img src="logo.jpg" alt="">
+        <!-- Colors del joguedor -->
+        <input type="text" placeholder="Nick" id="txtMensaje">
+        <select id="color">
+          <option value="#a4f21e">Verd</option>
+          <option value="#f44336">Vermell</option>
+          <option value="#2196f3">Blau</option>
+        </select>
+        <!-- Botos per crear mapa -->
+        <button id="mapa">Crear Plataforme</button>
+        <!-- Botos per conectar el juguedor -->
+        <button id="boton">Conectar</button>
+        <!-- Texta per omplir -->
+        <hr>
+        <p>Selecion per crear la plataforma avans de jugar</p>
+        
+        <p>R3ivax Games</p>
+
+        <!-- Botos social amb les LLETRES AWESOME -->
+        <div id="facebook" class="social"><a href="facebook.com"></a><i class="fa fa-facebook"></i></div>
+        <div id="youtube" class="social"><a href="youtube.com"></a><i class="fa fa-youtube"></i></div>      
+      </div>
+    </div>
+
+    <!-- Plataforma de jocs (on es juga a tot el joc) -->
+    <section id="plataforma">
+      <!-- Cartell de jugadors i punts -->
+      <aside id="contenedor">
+        <h3>Posicions:</h3>
+        <!-- Marca la posicio fixa ;-) -->
+        <ul id="puesto" style="float:left">
+          <li>1: </li>
+          <li>2: </li>
+          <li>3: </li>
+        </ul>
+        <!-- Aquesta es la posico del jugadors sengos els punts -->
+        <ul id="listaj">          
+        </ul>
+      </aside>
+    </section>
+  </body>
+  <!-- i el scripts io mes el del joc -->
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</html>
